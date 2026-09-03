@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>瑪奇 Mobile｜購物指南</title>
+<title>瑪奇 Mobile</title>
 <style>
-:root{--bg:#f4f1e8;--paper:#fffdf7;--ink:#31362f;--muted:#7b8077;--line:#ded9ca;--green:#64785e;--green2:#e8eee3;--gold:#c69343;--must:#fff0a8;--must-line:#d7ad38;--daily:#eef4fb;--weekly:#f3eef8;--danger:#a65045;--shadow:0 10px 30px rgba(69,63,47,.08)}
-*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#ebe7dc 0,#f6f3eb 190px);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC",sans-serif}.wrap{max-width:1180px;margin:auto;padding:30px 20px 70px}.hero{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:22px}.eyebrow{font-size:12px;letter-spacing:.18em;color:var(--green);font-weight:800}.hero h1{margin:6px 0 4px;font-family:Georgia,"Noto Serif TC",serif;font-size:32px}.sub{margin:0;color:var(--muted);font-size:14px}.legend{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.tag{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:6px 9px;background:#fff}.tag.must{background:var(--must);border-color:#ead17b}.summary{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:14px 0}.stat{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 16px;box-shadow:var(--shadow)}.stat .n{font-size:25px;font-weight:800;margin-right:6px}.stat small{color:var(--muted);font-size:13px}
+:root{--bg:#faf8f3;--paper:#fffefa;--ink:#2f352f;--muted:#767c74;--line:#e3dfd5;--green:#5f735b;--green2:#eef2ec;--gold:#c69343;--must:#fff0a8;--must-line:#d7ad38;--daily:#eef4fb;--weekly:#f3eef8;--danger:#a65045;--shadow:0 8px 24px rgba(69,63,47,.055)}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#f4f1e9 0,#faf8f3 180px);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC",sans-serif}.wrap{max-width:1180px;margin:auto;padding:30px 20px 70px}.hero{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:22px}.eyebrow{font-size:12px;letter-spacing:.18em;color:var(--green);font-weight:800}.hero h1{margin:6px 0 4px;font-family:Georgia,"Noto Serif TC",serif;font-size:32px}.sub{margin:0;color:var(--muted);font-size:14px}.legend{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.tag{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:6px 9px;background:#fff}.tag.must{background:var(--must);border-color:#ead17b}.summary{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:14px 0}.stat{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 16px;box-shadow:var(--shadow)}.stat .n{font-size:25px;font-weight:800;margin-right:6px}.stat small{color:var(--muted);font-size:13px}
 .tabs{display:flex;gap:7px;overflow:auto;padding-bottom:8px;margin:8px 0 12px}.tab{white-space:nowrap;border:1px solid var(--line);background:rgba(255,255,255,.65);border-radius:11px;padding:9px 13px;cursor:pointer;color:#555b52;font-weight:700}.tab.active{background:var(--green);color:#fff;border-color:var(--green)}
 .toolbar{display:flex;flex-direction:column;gap:10px;background:var(--paper);border:1px solid var(--line);padding:12px;border-radius:15px;box-shadow:var(--shadow);position:sticky;top:8px;z-index:10}.search{display:flex;align-items:center;gap:10px;background:#f7f5ef;border:1px solid #e2ddcf;border-radius:10px;padding:0 13px}.search-icon{width:21px;height:21px;flex:0 0 21px;stroke:currentColor;stroke-width:2.4}.search input{border:0;outline:0;background:transparent;width:100%;padding:11px 0;font-size:15px}.filters{display:flex;gap:7px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 12px;cursor:pointer;font-size:14px}.filter.active{background:#30372f;color:#fff;border-color:#30372f}
-.resultbar{display:flex;justify-content:space-between;align-items:center;margin:18px 2px 10px}.resultbar b{font-size:15px}.resultbar span{color:var(--muted);font-size:13px;white-space:nowrap}.groups{display:grid;gap:12px}.npc{background:var(--paper);border:1px solid #d9d4c5;border-radius:17px;box-shadow:var(--shadow);overflow:hidden}.npc-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 15px 11px 18px;border-bottom:1px solid #d9d0c1;background:#eee8dd;box-shadow:inset 5px 0 0 #66755f}.npc-head>div{min-width:0}.shop-name{font-weight:900;font-size:18px;line-height:1.2;color:#3d423b;letter-spacing:.01em}.npc-name{display:inline-block;font-weight:800;font-size:14px;margin-top:5px;color:#53624f;border-bottom:2px solid #98a28f;padding-bottom:1px}.mapbadge{font-size:12px;color:#666a61;background:#faf7f0;border:1px solid #d7d0c3;padding:5px 9px;border-radius:999px;white-space:nowrap;flex:0 0 auto;align-self:center}.items{display:grid;background:#fffdf7}.item{padding:9px 15px;border-top:1px solid #eee9dc}.item:first-child{border-top:0}.item.mustbuy{background:linear-gradient(90deg,#fff8d5,#fffdf7 55%);box-shadow:inset 4px 0 0 var(--must-line)}.item-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}.item-title{font-weight:780;font-size:15px;line-height:1.3}.limit{white-space:nowrap;text-align:right;font-size:13px}.limit .cell-label{display:inline;margin-right:5px}.item-meta{display:grid;grid-template-columns:minmax(110px,155px) minmax(0,1fr);gap:12px;margin-top:5px;align-items:start}.badges{display:flex;gap:5px;flex-wrap:wrap;margin-top:5px}.pill{display:inline-flex;font-size:11px;padding:2px 6px;border-radius:6px;background:#eee}.pill.daily{background:var(--daily)}.pill.weekly{background:var(--weekly)}.pill.must{background:#f5d867}.pill.work{background:#e9e1d5}.cell-label{font-size:11px;color:#92968e;display:block;margin-bottom:1px}.value{font-size:13.5px}.note{font-size:13.5px;color:#555c52;line-height:1.35}.empty{padding:50px 20px;text-align:center;color:var(--muted);background:var(--paper);border:1px dashed var(--line);border-radius:16px}.foot{margin-top:24px;color:#8b8e87;font-size:12px;text-align:center}
+.resultbar{display:flex;justify-content:space-between;align-items:center;margin:18px 2px 10px}.resultbar b{font-size:15px}.resultbar span{color:var(--muted);font-size:13px;white-space:nowrap}.groups{display:grid;gap:12px}.npc{background:var(--paper);border:1px solid #d9d4c5;border-radius:17px;box-shadow:var(--shadow);overflow:hidden}.npc-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 15px 11px 18px;border-bottom:1px solid #d9d0c1;background:#f4f2ec;box-shadow:inset 5px 0 0 #5f735b}.npc-head>div{min-width:0}.shop-name{font-weight:900;font-size:18px;line-height:1.2;color:#273329;letter-spacing:.01em}.npc-name{display:inline-block;font-weight:800;font-size:14px;margin-top:5px;color:#465d48;border-bottom:2px solid #7f927d;padding-bottom:1px}.mapbadge{font-size:12px;color:#666a61;background:#faf7f0;border:1px solid #d7d0c3;padding:5px 9px;border-radius:999px;white-space:nowrap;flex:0 0 auto;align-self:center}.items{display:grid;background:#fffdf7}.item{padding:9px 15px;border-top:1px solid #eee9dc}.item:first-child{border-top:0}.item.mustbuy{background:linear-gradient(90deg,#fff8d5,#fffdf7 55%);box-shadow:inset 4px 0 0 var(--must-line)}.item-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}.item-title{font-weight:780;font-size:15px;line-height:1.3}.limit{white-space:nowrap;text-align:right;font-size:13px}.limit .cell-label{display:inline;margin-right:5px}.item-meta{display:grid;grid-template-columns:minmax(110px,155px) minmax(0,1fr);gap:12px;margin-top:5px;align-items:start}.badges{display:flex;gap:5px;flex-wrap:wrap;margin-top:5px}.pill{display:inline-flex;font-size:11px;padding:2px 6px;border-radius:6px;background:#eee}.pill.daily{background:var(--daily)}.pill.weekly{background:var(--weekly)}.pill.must{background:#f5d867}.pill.work{background:#e9e1d5}.cell-label{font-size:11px;color:#92968e;display:block;margin-bottom:1px}.value{font-size:13.5px}.note{font-size:13.5px;color:#555c52;line-height:1.35}.empty{padding:50px 20px;text-align:center;color:var(--muted);background:var(--paper);border:1px dashed var(--line);border-radius:16px}.foot{margin-top:24px;color:#8b8e87;font-size:12px;text-align:center}
 mark{background:#ffe787;padding:0 2px;border-radius:2px}@media(max-width:780px){.wrap{padding:20px 12px 50px}.hero{align-items:flex-start;flex-direction:column}.legend{justify-content:flex-start}.summary{grid-template-columns:1fr 1fr}.toolbar{position:static}.hero h1{font-size:27px}.npc-head{align-items:center}.item-meta{grid-template-columns:minmax(92px,120px) minmax(0,1fr);gap:9px}.item-title{font-size:15px}.note,.value{font-size:13px}}
 
 /* Top-level section navigation */
@@ -23,19 +23,195 @@ mark{background:#ffe787;padding:0 2px;border-radius:2px}@media(max-width:780px){
 
 
 /* Daily checklist */
-.todo-top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin:2px 2px 10px}.todo-top h2{font-size:22px;margin:0 0 3px}.todo-top p{font-size:12.5px;color:var(--muted);margin:0}.todo-clear{border:1px solid var(--line);background:#fffdf7;border-radius:9px;padding:7px 10px;color:#666b63;cursor:pointer}.todo-list,.weekly-list{display:grid;gap:7px}.todo-item{position:relative;display:grid;grid-template-columns:22px minmax(0,1fr) auto;align-items:center;gap:10px;background:var(--paper);border:1px solid #d9d4c5;border-radius:12px;padding:10px 12px;cursor:pointer;box-shadow:0 4px 14px rgba(69,63,47,.045)}.todo-item.important{background:linear-gradient(90deg,#fff8d5,#fffdf7 48%);border-color:#e3d49d}.todo-item input{position:absolute;opacity:0;pointer-events:none}.todo-check{width:20px;height:20px;border:2px solid #a8aa9f;border-radius:6px;background:#fff;display:grid;place-items:center}.todo-item input:checked+.todo-check{background:#64785e;border-color:#64785e}.todo-item input:checked+.todo-check:after{content:'✓';font-size:14px;font-weight:900;color:#fff;line-height:1}.todo-item:has(input:checked) .todo-main{opacity:.48;text-decoration:line-through}.todo-main{min-width:0}.todo-main b{display:block;font-size:15px;line-height:1.25}.todo-main small{display:block;margin-top:2px;font-size:12.5px;line-height:1.4;color:#696e66}.todo-tag{font-size:11.5px;font-weight:850;border:1px solid #d9d3c5;background:#f5f1e8;border-radius:999px;padding:4px 7px;white-space:nowrap}.important .todo-tag{background:#fff0a8;border-color:#e0c763}.day-rewards{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:6px;font-size:12px;color:#555c53}.day-rewards span{white-space:nowrap}.day-rewards i{font-style:normal;font-weight:900;color:#64785e}.day-rewards strong{font-weight:850;color:#343a34}.weekly-box{margin-top:12px;background:var(--paper);border:1px solid #d9d4c5;border-radius:14px;overflow:hidden}.weekly-box summary{list-style:none;display:flex;align-items:center;justify-content:space-between;padding:11px 13px;cursor:pointer;background:#eee8dd}.weekly-box summary::-webkit-details-marker{display:none}.weekly-box summary b{display:block;font-size:16px}.weekly-box summary small{display:block;color:#777c74;font-size:11.5px;margin-top:2px}.weekly-arrow{font-size:20px;transition:.2s}.weekly-box[open] .weekly-arrow{transform:rotate(180deg)}.weekly-list{padding:8px}.weekly-list .todo-item{box-shadow:none}.weekly-list .todo-item:last-child{margin-bottom:0}@media(max-width:600px){.todo-top{align-items:flex-start}.todo-top p{max-width:250px}.todo-item{grid-template-columns:22px minmax(0,1fr) auto;padding:9px 10px;gap:8px}.todo-main b{font-size:14.5px}.todo-main small{font-size:12px}.day-rewards{font-size:11.5px}}
+.todo-top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin:2px 2px 10px}.todo-top h2{font-size:22px;margin:0 0 3px}.todo-top p{font-size:12.5px;color:var(--muted);margin:0}.todo-clear{border:1px solid var(--line);background:#fffdf7;border-radius:9px;padding:7px 10px;color:#666b63;cursor:pointer}.todo-list,.weekly-list{display:grid;gap:7px}.todo-item{position:relative;display:grid;grid-template-columns:22px minmax(0,1fr) auto;align-items:center;gap:10px;background:var(--paper);border:1px solid #d9d4c5;border-radius:12px;padding:10px 12px;cursor:pointer;box-shadow:0 4px 14px rgba(69,63,47,.045)}.todo-item.important{background:linear-gradient(90deg,#fff8d5,#fffdf7 48%);border-color:#e3d49d}.todo-item input{position:absolute;opacity:0;pointer-events:none}.todo-check{width:20px;height:20px;border:2px solid #a8aa9f;border-radius:6px;background:#fff;display:grid;place-items:center}.todo-item input:checked+.todo-check{background:#64785e;border-color:#64785e}.todo-item input:checked+.todo-check:after{content:'✓';font-size:14px;font-weight:900;color:#fff;line-height:1}.todo-item:has(input:checked) .todo-main{opacity:.48;text-decoration:line-through}.todo-main{min-width:0}.todo-main b{display:block;font-size:15px;line-height:1.25}.todo-main small{display:block;margin-top:2px;font-size:12.5px;line-height:1.4;color:#696e66}.todo-tag{font-size:11.5px;font-weight:850;border:1px solid #d9d3c5;background:#f5f1e8;border-radius:999px;padding:4px 7px;white-space:nowrap}.important .todo-tag{background:#fff0a8;border-color:#e0c763}.day-rewards{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:6px;font-size:12px;color:#555c53}.day-rewards span{white-space:nowrap}.day-rewards i{font-style:normal;font-weight:900;color:#64785e}.day-rewards strong{font-weight:850;color:#343a34}.weekly-box{margin-top:12px;background:var(--paper);border:1px solid #d9d4c5;border-radius:14px;overflow:hidden}.weekly-box summary{list-style:none;display:flex;align-items:center;justify-content:space-between;padding:10px 13px;cursor:pointer;background:#fffefa;box-shadow:inset 4px 0 0 #5f735b}.weekly-box summary::-webkit-details-marker{display:none}.weekly-box summary b{display:block;font-size:16px;color:#2f3c31}.weekly-box summary small{display:block;color:#777c74;font-size:11.5px;margin-top:2px}.weekly-arrow{font-size:20px;transition:.2s}.weekly-box[open] .weekly-arrow{transform:rotate(180deg)}.weekly-list{padding:8px}.weekly-list .todo-item{box-shadow:none}.weekly-list .todo-item:last-child{margin-bottom:0}@media(max-width:600px){.todo-top{align-items:flex-start}.todo-top p{max-width:250px}.todo-item{grid-template-columns:22px minmax(0,1fr) auto;padding:9px 10px;gap:8px}.todo-main b{font-size:14.5px}.todo-main small{font-size:12px}.day-rewards{font-size:11.5px}}
 
 .coin-icon{font-style:normal;color:#d6a21f;font-size:1.15em;line-height:1;text-shadow:0 0 0 #d6a21f}.weekday-dungeon .day-rewards{display:grid;grid-template-columns:1fr;gap:3px;margin-top:6px}.weekday-dungeon .day-rewards span{display:grid;grid-template-columns:54px minmax(150px,auto) 1fr;align-items:center;gap:7px;width:100%}.weekday-dungeon .day-rewards small{margin:0;color:var(--muted);font-size:12px}.cost-note{display:block!important;margin-top:6px!important;font-size:12px!important;color:var(--muted)!important}@media(max-width:640px){.weekday-dungeon .day-rewards span{grid-template-columns:48px minmax(0,1fr) auto;gap:5px}.weekday-dungeon .day-rewards span>small{grid-column:auto;font-size:11.5px}}
 .brand-logo{display:flex;align-items:center}.brand-logo img{display:block;width:min(270px,70vw);height:auto;max-height:72px;object-fit:contain;object-position:left center}@media(max-width:780px){.brand-logo img{width:min(230px,72vw);max-height:60px}}
 .item-title-row{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.item-title-row .badges{margin-top:0}.item-title-row .pill{padding:2px 6px;font-size:10.5px}
 </style>
   <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwMmSzUB1jW6L2PoeNjejwTfmwC1_-JgjzNzrBJJHLijWK8tiNenfVzfw&s=10">
+
+<style id="daily-layout-tools">
+@media (min-width: 980px) {
+  .daily-layout-wrap{display:grid !important;grid-template-columns:minmax(0,1.7fr) minmax(300px,.9fr);gap:18px;align-items:start;}
+  .daily-main-col{min-width:0;}
+  .daily-side-col{position:sticky;top:16px;display:flex;flex-direction:column;gap:14px;}
+}
+@media (max-width: 979px) {
+  .daily-layout-wrap{display:block !important;}
+  .daily-side-col{margin-top:14px;}
+}
+.daily-side-card{background:#fffdfa;border:1px solid #ded8ca;border-radius:16px;padding:14px;}
+.daily-side-title{font-size:16px;font-weight:800;color:#2f3a31;margin:0 0 10px;}
+.adventure-note{width:100%;min-height:170px;resize:vertical;box-sizing:border-box;border:1px solid #d8d2c6;border-radius:12px;background:#fff;padding:12px;font:inherit;line-height:1.55;color:#30352f;outline:none;}
+.adventure-note:focus{border-color:#7f907b;box-shadow:0 0 0 3px rgba(127,144,123,.10);}
+.custom-task-add{display:flex;gap:8px;margin-bottom:10px;}
+.custom-task-input{flex:1;min-width:0;border:1px solid #d8d2c6;border-radius:10px;padding:9px 10px;font:inherit;background:#fff;}
+.custom-task-btn{flex:0 0 auto;border:0;border-radius:10px;padding:9px 12px;background:#354037;color:#fff;font-weight:700;cursor:pointer;}
+.custom-task-list{display:flex;flex-direction:column;gap:7px;}
+.custom-task-row{display:flex;align-items:center;gap:9px;padding:8px 9px;border:1px solid #ebe5d9;border-radius:10px;background:#fff;}
+.custom-task-row.done .custom-task-text{text-decoration:line-through;opacity:.5;}
+.custom-task-text{flex:1;min-width:0;word-break:break-word;}
+.custom-task-delete{border:0;background:transparent;color:#8b8a83;cursor:pointer;font-size:16px;padding:2px 4px;}
+</style>
+
+
+<style id="cat-layout-tweaks">
+@media (min-width: 980px){
+  .wrap{max-width:1120px;padding-left:18px;padding-right:18px}
+  .daily-layout-wrap{grid-template-columns:minmax(0,1.72fr) minmax(300px,.82fr);gap:16px}
+  .daily-side-col{gap:12px}
+  .cat-spot{display:flex;justify-content:center;align-items:flex-end;min-height:250px;padding:8px 0 0}
+  .cat-spot img{display:block;max-width:100%;width:250px;height:auto;object-fit:contain}
+  #shoppingPage,#goldPage{position:relative;padding-right: 0;min-height:640px}
+  #shoppingPage>.page-cat,#goldPage>.page-cat{position:absolute;right:0;bottom:0;width:185px;max-height:330px;object-fit:contain;display:block}
+}
+@media (max-width:979px){
+  .cat-spot,.page-cat{display:none!important}
+  #shoppingPage,#goldPage{padding-right:0}
+}
+</style>
+
+<style id="fixed-cat-layout">
+@media (min-width: 1180px) {
+  .page-cat,
+  .corner-cat,
+  .cat-decoration,
+  .mabinogi-cat {
+    position: fixed !important;
+    right: 18px !important;
+    bottom: 0 !important;
+    width: clamp(150px, calc((100vw - 1024px) / 2 - 18px), 260px) !important;
+    max-height: 42vh !important;
+    object-fit: contain !important;
+    object-position: right bottom !important;
+    margin: 0 !important;
+    z-index: 3 !important;
+    pointer-events: none !important;
+  }
+}
+@media (max-width: 1179px) {
+  .page-cat,
+  .corner-cat,
+  .cat-decoration,
+  .mabinogi-cat {
+    display:none !important;
+  }
+}
+</style>
+
+
+<style id="cat-interaction-styles">
+/* Decorative cat stays fixed at the viewport bottom-right, outside the 1024px content. */
+.mabinogi-cat-wrap{
+  position:fixed;
+  right:18px;
+  bottom:0;
+  z-index:20;
+  width:clamp(150px, calc((100vw - 1024px) / 2 - 18px), 260px);
+  pointer-events:auto;
+}
+.mabinogi-cat-wrap .mabinogi-cat{
+  position:static !important;
+  display:block !important;
+  width:100% !important;
+  max-height:42vh !important;
+  object-fit:contain !important;
+  object-position:right bottom !important;
+  margin:0 !important;
+  pointer-events:auto !important;
+  cursor:pointer;
+}
+.cat-bubble{
+  position:absolute;
+  right:14px;
+  bottom:calc(100% + 10px);
+  min-width:145px;
+  max-width:240px;
+  padding:13px 16px;
+  border:1px solid #d9d1c2;
+  border-radius:22px;
+  background:#fffdfa;
+  box-shadow:0 8px 24px rgba(50,55,48,.10);
+  opacity:0;
+  transform:translateY(8px) scale(.98);
+  visibility:hidden;
+  transition:opacity .2s ease, transform .2s ease, visibility .2s ease;
+  color:#2f3931;
+}
+.cat-bubble::after{
+  content:"";
+  position:absolute;
+  right:38px;
+  bottom:-10px;
+  width:18px;
+  height:18px;
+  background:#fffdfa;
+  border-right:1px solid #d9d1c2;
+  border-bottom:1px solid #d9d1c2;
+  transform:rotate(45deg);
+}
+.mabinogi-cat-wrap:hover .cat-bubble,
+.mabinogi-cat-wrap:focus-within .cat-bubble{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0) scale(1);
+}
+.cat-bubble-halo{
+  font-size:17px;
+  font-weight:800;
+  text-align:center;
+  white-space:nowrap;
+}
+.cat-bubble-search{
+  min-width:230px;
+}
+.cat-search-row{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.cat-search-input{
+  min-width:0;
+  flex:1;
+  border:1px solid #d8d2c6;
+  border-radius:12px;
+  background:#fff;
+  padding:9px 10px;
+  font:inherit;
+  color:#30352f;
+  outline:none;
+}
+.cat-search-input:focus{
+  border-color:#7f907b;
+  box-shadow:0 0 0 3px rgba(127,144,123,.10);
+}
+.cat-search-btn{
+  flex:0 0 auto;
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  border:0;
+  border-radius:11px;
+  background:#354037;
+  color:#fff;
+  font-size:18px;
+  cursor:pointer;
+}
+@media (max-width:1179px){
+  .mabinogi-cat-wrap{display:none !important;}
+}
+</style>
+
 </head>
 <body><main class="wrap">
 <section class="hero"><div class="brand-logo"><img src="https://nxtw.dn.nexoncdn.co.kr/mbm/home/img/mmlogo.svg" alt="瑪奇 Mobile"></div></section>
-<nav class="main-menu" aria-label="內容分類"><button class="menu-btn active" data-page="routine">每日待辦</button><button class="menu-btn" data-page="shopping">商店採購</button><button class="menu-btn" data-page="gold">快速採集</button></nav>
+<nav class="main-menu" aria-label="內容分類"><button class="menu-btn active" data-page="routine">每日待辦</button><button class="menu-btn" data-page="shopping">購物指南</button><button class="menu-btn" data-page="gold">快速採集</button></nav>
 <section class="page-section" id="routinePage">
-  <div class="todo-top"><div><h2>每日待辦</h2></div><button class="todo-clear" type="button" id="clearTodos">清除勾選</button></div>
+<div class="daily-layout-wrap">
+  <div class="daily-main-col">
+<div class="todo-top"><div><h2>每日待辦</h2></div><button class="todo-clear" type="button" id="clearTodos">清除勾選</button></div>
   <div class="todo-list" id="dailyTodos">
     <label class="todo-item important"><input type="checkbox"><span class="todo-check"></span><span class="todo-main"><b>商城破碎的寶石箱</b><small>道具商店 → 金幣，每個 4,000 金幣。</small></span><span class="todo-tag">必買</span></label>
     <label class="todo-item important"><input type="checkbox"><span class="todo-check"></span><span class="todo-main"><b>商城每日免費商品</b><small>每天領取免費商品。</small></span><span class="todo-tag">先領</span></label>
@@ -54,12 +230,30 @@ mark{background:#ffe787;padding:0 2px;border-radius:2px}@media(max-width:780px){
       <label class="todo-item"><input type="checkbox"><span class="todo-check"></span><span class="todo-main"><b>深淵與團隊副本</b><small>每週重置通關戰利品次數；建議週末前清完。</small></span><span class="todo-tag">每週</span></label>
     </div>
   </details>
+  </div>
+  <aside class="daily-side-col">
+    <section class="daily-side-card">
+      <h3 class="daily-side-title">📝 冒險備忘Zoo</h3>
+      <textarea id="adventureNote" class="adventure-note" placeholder="今天要做／要記的事情…"></textarea>
+    </section>
+    <section class="daily-side-card">
+      <h3 class="daily-side-title">⚔️ 待辦GoGo</h3>
+      <div class="custom-task-add">
+        <input id="customTaskInput" class="custom-task-input" type="text" placeholder="新增待辦">
+        <button id="customTaskAddBtn" class="custom-task-btn" type="button">＋</button>
+      </div>
+      <div id="customTaskList" class="custom-task-list"></div>
+    </section>
+    <div class="cat-spot"></div>
+  </aside>
+</div>
 </section>
 <section class="page-section" id="shoppingPage" hidden>
 <nav class="tabs" id="tabs"></nav>
 <section class="toolbar"><label class="search"><svg class="search-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.2 4.2"></path></svg><input id="q" placeholder="搜尋 NPC、物品、地點、貨幣、備註…" /></label><div class="filters"><button class="filter" data-filter="all">全部</button><button class="filter active" data-filter="dailyMust">每日必買</button><button class="filter" data-filter="weeklyMust">每週必買</button><button class="filter" data-filter="daily">每日</button><button class="filter" data-filter="weekly">每週</button></div></section>
 <div class="resultbar"><b id="viewTitle">全部地圖</b><span id="count"></span></div>
 <section id="results" class="groups"></section>
+
 </section>
 <section class="page-section" id="goldPage" hidden>
   <div class="gold-guide">
@@ -68,6 +262,7 @@ mark{background:#ffe787;padding:0 2px;border-radius:2px}@media(max-width:780px){
     <div class="resultbar"><b id="goldTitle">全部快速採集</b><span id="goldCount"></span></div>
     <section class="gold-grid" id="goldResults"></section>
   </div>
+  
 </section>
 
 </main>
@@ -81,7 +276,7 @@ function hl(s){s=esc(s); if(!query.trim()) return s; const k=query.trim().replac
 function init(){
  const tabs=[['all','全部地圖'],...MAPS.map(x=>[x,x]),['workbench','工作台']];
  document.querySelector('#tabs').innerHTML=tabs.map(([k,t])=>`<button class="tab ${k==='all'?'active':''}" data-map="${esc(k)}">${esc(t)}</button>`).join('');
- document.querySelector('#tabs').onclick=e=>{const b=e.target.closest('[data-map]');if(!b)return;activeMap=b.dataset.map;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));render()};
+ document.querySelector('#tabs').onclick=e=>{const b=e.target.closest('[data-map]');if(!b)return;activeMap=b.dataset.map;if(activeMap==='workbench'){activeFilter='all';document.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x.dataset.filter==='all'));}document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));render()};
  document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{activeFilter=b.dataset.filter;document.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x===b));render()});
  document.querySelector('#q').addEventListener('input',e=>{query=e.target.value;render()});render();
 }
@@ -141,4 +336,155 @@ function renderGold(){
 init();initPages();
 
 document.querySelector('#clearTodos')?.addEventListener('click',()=>document.querySelectorAll('#routinePage input[type=checkbox]').forEach(x=>x.checked=false));
-</script></body></html>
+</script>
+<script id="daily-side-tools-script">
+(function(){
+  const NOTE_KEY='mabinogi_adventure_note';
+  const TASK_KEY='mabinogi_custom_tasks';
+  function loadTasks(){try{return JSON.parse(localStorage.getItem(TASK_KEY)||'[]')}catch(e){return[]}}
+  function saveTasks(tasks){localStorage.setItem(TASK_KEY,JSON.stringify(tasks));}
+  function renderTasks(){
+    const list=document.getElementById('customTaskList'); if(!list)return;
+    const tasks=loadTasks(); list.innerHTML='';
+    tasks.forEach((task,index)=>{
+      const row=document.createElement('div'); row.className='custom-task-row'+(task.done?' done':'');
+      const cb=document.createElement('input'); cb.type='checkbox'; cb.checked=!!task.done;
+      cb.addEventListener('change',()=>{const next=loadTasks();if(next[index])next[index].done=cb.checked;saveTasks(next);renderTasks();});
+      const text=document.createElement('div'); text.className='custom-task-text'; text.textContent=task.text;
+      const del=document.createElement('button'); del.className='custom-task-delete'; del.type='button'; del.textContent='×'; del.title='刪除';
+      del.addEventListener('click',()=>{const next=loadTasks();next.splice(index,1);saveTasks(next);renderTasks();});
+      row.append(cb,text,del); list.appendChild(row);
+    });
+  }
+  document.addEventListener('DOMContentLoaded',()=>{
+    const note=document.getElementById('adventureNote');
+    if(note){note.value=localStorage.getItem(NOTE_KEY)||'';note.addEventListener('input',()=>localStorage.setItem(NOTE_KEY,note.value));}
+    const input=document.getElementById('customTaskInput'); const btn=document.getElementById('customTaskAddBtn');
+    const addTask=()=>{if(!input)return;const text=input.value.trim();if(!text)return;const tasks=loadTasks();tasks.push({text,done:false});saveTasks(tasks);input.value='';renderTasks();};
+    if(btn)btn.addEventListener('click',addTask);
+    if(input)input.addEventListener('keydown',e=>{if(e.key==='Enter')addTask();});
+    renderTasks();
+  });
+})();
+</script>
+
+
+<div class="mabinogi-cat-wrap" id="mabinogiCatWrap">
+  <div class="cat-bubble cat-bubble-halo" id="catHaloBubble">halo !</div>
+  <div class="cat-bubble cat-bubble-search" id="catSearchBubble">
+    <div class="cat-search-row">
+      <input id="catSearchInput" class="cat-search-input" type="search" placeholder="搜尋">
+      <button id="catSearchBtn" class="cat-search-btn" type="button" aria-label="搜尋">⌕</button>
+    </div>
+  </div>
+  <img class="mabinogi-cat" src="https://nxtw.dn.nexoncdn.co.kr/mbm/home/img/main/cat.png" alt="">
+</div>
+
+
+<script id="cat-interaction-script">
+(function(){
+  function activePageKey(){
+    const active = document.querySelector('[data-page].active');
+    return active?.dataset.page || 'routine';
+  }
+
+  function syncCatBubble(){
+    const halo = document.getElementById('catHaloBubble');
+    const search = document.getElementById('catSearchBubble');
+    const catInput = document.getElementById('catSearchInput');
+    if(!halo || !search) return;
+
+    const page = activePageKey();
+    halo.style.display = page === 'routine' ? '' : 'none';
+    search.style.display = page === 'routine' ? 'none' : '';
+
+    if(catInput){
+      if(page === 'shopping'){
+        catInput.placeholder = '搜尋';
+        catInput.value = document.getElementById('q')?.value || '';
+      }else if(page === 'gold'){
+        catInput.placeholder = '搜尋';
+        catInput.value = document.getElementById('goldQ')?.value || '';
+      }
+    }
+  }
+
+  function runCatSearch(){
+    const catInput = document.getElementById('catSearchInput');
+    if(!catInput) return;
+    const value = catInput.value;
+    const page = activePageKey();
+
+    if(page === 'shopping'){
+      const target = document.getElementById('q');
+      if(target) target.value = value;
+      query = value;
+      render();
+      return;
+    }
+
+    if(page === 'gold'){
+      const target = document.getElementById('goldQ');
+      if(target) target.value = value;
+      goldQuery = value;
+      renderGold();
+    }
+  }
+
+  function syncFromMainSearch(e){
+    const page = activePageKey();
+    const catInput = document.getElementById('catSearchInput');
+    if(!catInput) return;
+
+    if(page === 'shopping' && e.target.id === 'q'){
+      catInput.value = e.target.value;
+    }
+    if(page === 'gold' && e.target.id === 'goldQ'){
+      catInput.value = e.target.value;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', ()=>{
+    syncCatBubble();
+
+    const btn = document.getElementById('catSearchBtn');
+    const input = document.getElementById('catSearchInput');
+
+    if(btn) btn.addEventListener('click', runCatSearch);
+
+    if(input){
+      // Same feel as the top search bar: results update while typing.
+      input.addEventListener('input', runCatSearch);
+      input.addEventListener('keydown', e=>{
+        if(e.key === 'Enter') runCatSearch();
+      });
+    }
+
+    document.addEventListener('input', syncFromMainSearch);
+
+    document.addEventListener('click', (e)=>{
+      if(e.target.closest('[data-page]')){
+        setTimeout(syncCatBubble, 0);
+      }
+    });
+  });
+})();
+</script>
+
+</body></html>
+<style>
+/* desktop density + stronger NPC hierarchy */
+.npc-head{background:#e5ded1}
+.shop-name{color:#242a24}
+.npc-name{color:#465846;border-bottom-color:#66785f}
+@media(min-width:781px){
+  .wrap{max-width:1024px;padding-left:12px;padding-right:12px}
+  .todo-list{grid-template-columns:1fr;gap:6px}
+  .todo-item{padding:9px 12px}
+  .weekly-box{margin-top:9px}
+  .groups{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .toolbar{position:static}
+  .item{padding:8px 12px}
+  .npc-head{padding:10px 13px 10px 16px}
+}
+</style>
